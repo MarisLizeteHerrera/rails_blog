@@ -66,7 +66,7 @@ class BlogView extends React.Component {
       </Container>
     )
   }
-};
+}
 
 const mapStateToProps = (state, props) => {
   return { blog: state.blogs.find( a => a.id === parseInt(props.match.params.id, )) };
